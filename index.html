@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lunch Time</title>
+  </head>
+
+<body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+
+ <table>
+    <tr>
+  <td>
+  <input type="text" name="food" ng-model="food" ng-value="food">
+  </td>
+  <td>
+    <button type="button" name="button" ng-click="CheckResult()"> Check If Too Much</button>
+  </td>
+  </tr>
+  <tr>
+    <td></td><td><lable style="color:{{colour}}">{{Result}}</lable></td>
+  </tr>
+</table>
+  </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>
